@@ -1,241 +1,1578 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shreyash Maurya | Full-Stack Developer</title>
-    
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Shreyash Maurya — Computer Science & Engineering student focused on Java, DSA, backend development, and practical software engineering."
+    >
+
+    <meta
+        name="author"
+        content="Shreyash Maurya"
+    >
+
+    <meta
+        name="theme-color"
+        content="#0b0b0c"
+    >
+
+    <title>
+        Shreyash Maurya | Aspiring Software Engineer
+    </title>
+
+
+    <!-- ================================
+         GOOGLE FONTS
+         ================================ -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- ================================
+         FONT AWESOME
+         ================================ -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bzqgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    >
+
+
+    <!-- ================================
+         MAIN STYLESHEET
+         ================================ -->
 
     <link rel="stylesheet" href="style.css">
+
 </head>
+
+
 <body>
 
+    <!-- =================================================
+         HEADER / NAVIGATION
+         ================================================= -->
+
     <header id="header">
+
         <nav class="container">
-            <a href="#" class="logo">Shreyash Maurya</a>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+
+            <!-- Logo -->
+
+            <a
+                href="#hero"
+                class="logo"
+                aria-label="Shreyash Maurya - Home"
+            >
+                <span>SM</span>
+            </a>
+
+
+            <!-- Navigation -->
+
+            <div class="nav-right">
+
+                <ul class="nav-links">
+
+                    <li>
+                        <a href="#about">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#projects">
+                            Projects
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#skills">
+                            Skills
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#resume">
+                            Resume
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#contact">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+
+                <!-- GitHub -->
+
+                <a
+                    href="https://github.com/mauryashreyash"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="nav-github"
+                    aria-label="Visit my GitHub profile"
+                >
+                    <i class="fab fa-github"></i>
+                </a>
+
+
+                <!-- Mobile Menu Button -->
+
+                <button
+                    class="menu-toggle"
+                    type="button"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="mobile-menu"
+                >
+
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+            </div>
+
         </nav>
+
+
+        <!-- Mobile Navigation -->
+
+        <div
+            id="mobile-menu"
+            class="mobile-menu"
+        >
+
+            <ul>
+
+                <li>
+                    <a href="#about">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#projects">
+                        Projects
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#skills">
+                        Skills
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#resume">
+                        Resume
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contact">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
     </header>
 
-    <main>
-        <section id="hero">
-    <div class="container">
-        <h1>Shreyash Maurya</h1>
-        <p class="tagline">Frontend Developer & Creative Problem Solver</p>
-    </div>
-</section>
 
-        <section id="about" class="container section">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="assets/images/shreyash.jpg" alt="Your Name Portrait">
+
+    <!-- =================================================
+         MAIN CONTENT
+         ================================================= -->
+
+    <main>
+
+
+        <!-- =================================================
+             HERO
+             ================================================= -->
+
+        <section id="hero">
+
+            <!-- Existing background image retained -->
+
+            <div class="hero-background"></div>
+
+
+            <div class="container hero-content">
+
+                <p class="hero-eyebrow">
+                    Computer Science & Engineering Student
+                </p>
+
+
+                <h1>
+
+                    Building my way
+                    <br>
+
+                    <span>
+                        into software engineering.
+                    </span>
+
+                </h1>
+
+
+                <p class="hero-description">
+
+                    I'm Shreyash Maurya — a CSE student focused on
+                    Java, Data Structures & Algorithms, backend
+                    development, and building practical software.
+
+                </p>
+
+
+                <!-- Hero actions -->
+
+                <div class="hero-actions">
+
+                    <a
+                        href="#projects"
+                        class="btn btn-primary"
+                    >
+                        Explore my work
+
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+
+
+                    <a
+                        href="assets/resume/shreyash_resume_updated.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-ghost"
+                    >
+                        View resume
+                    </a>
+
                 </div>
+
+
+                <!-- Hero meta -->
+
+                <div class="hero-meta">
+
+                    <span>
+
+                        <span class="status-dot"></span>
+
+                        Currently learning Spring Boot
+
+                    </span>
+
+
+                    <span
+                        class="hero-divider"
+                        aria-hidden="true"
+                    ></span>
+
+
+                    <a
+                        href="https://github.com/mauryashreyash"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+
+                        GitHub
+
+                        <i
+                            class="fas fa-arrow-up-right-from-square"
+                            aria-hidden="true"
+                        ></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Scroll indicator -->
+
+            <a
+                href="#about"
+                class="scroll-indicator"
+                aria-label="Scroll to About section"
+            >
+
+                <span>
+                    Scroll to explore
+                </span>
+
+                <i class="fas fa-arrow-down"></i>
+
+            </a>
+
+        </section>
+
+
+
+        <!-- =================================================
+             ABOUT
+             ================================================= -->
+
+        <section
+            id="about"
+            class="container section"
+        >
+
+            <div class="section-heading">
+
+                <p class="section-kicker">
+                    01 — About
+                </p>
+
+                <h2>
+
+                    Still learning.
+                    <br>
+
+                    <span>
+                        Already building.
+                    </span>
+
+                </h2>
+
+            </div>
+
+
+            <div class="about-content">
+
+
+                <!-- Profile image -->
+
+                <div class="about-image">
+
+                    <img
+                        src="assets/images/shreyash.jpg"
+                        alt="Portrait of Shreyash Maurya"
+                        loading="lazy"
+                    >
+
+                </div>
+
+
+                <!-- About text -->
+
                 <div class="about-text">
 
-                    <h3>Java Backend Developer | Aspiring Software Engineer</h3>
+                    <p class="about-lead">
 
-                    <p>
-                        I'm a Computer Science and Engineering student focused on building
-                        practical software solutions with Java, Data Structures & Algorithms,
-                        and backend development. I enjoy solving problems, understanding how
-                        systems work, and turning ideas into functional applications.
-                    </p> <br>
+                        I'm a Computer Science & Engineering student
+                        interested in understanding how software works
+                        beneath the interface and turning ideas into
+                        useful applications.
 
-                    <p>
-                        Currently, I'm strengthening my backend development skills with
-                        Spring Boot, REST APIs, MySQL, and JDBC while expanding my frontend
-                        knowledge with JavaScript and React.js. My goal is to become a
-                        well-rounded Java Full-Stack Developer capable of building scalable
-                        and user-focused applications.
-                    </p><br>
-
-                    <p>
-                        I continuously work on projects, practice DSA, and improve my
-                        development skills through hands-on learning. I'm open to
-                        internship and entry-level opportunities where I can learn,
-                        contribute, and grow as a software engineer.
                     </p>
-</div>
+
+
+                    <p>
+
+                        My strongest direction is Java and backend
+                        development, with a growing focus on Spring Boot,
+                        REST APIs, MySQL, JDBC, and software engineering
+                        fundamentals.
+
+                    </p>
+
+
+                    <p>
+
+                        Alongside backend development, I work with
+                        JavaScript, React, HTML, and CSS so I can understand
+                        and build complete user-facing applications.
+
+                    </p>
+
+
+                    <a
+                        href="#projects"
+                        class="text-link"
+                    >
+
+                        See what I've built
+
+                        <i class="fas fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
             </div>
+
         </section>
 
-        <section id="skills" class="container section">
-            <h2 class="section-title">My Skills</h2>
-            <div class="skills-grid">
-                <!-- Core -->
-                <div class="skill-item">Java</div>
-                <div class="skill-item">Data Structures & Algorithms</div>
-                <div class="skill-item">Object-Oriented Programming</div>
-                <div class="skill-item">Problem Solving</div>
+
+
+        <!-- =================================================
+             WHAT I BUILD
+             ================================================= -->
+
+        <section
+            id="what-i-build"
+            class="container section"
+        >
+
+            <div class="section-heading">
+
+                <p class="section-kicker">
+                    02 — Direction
+                </p>
+
+                <h2>
+
+                    What I'm
+                    <br>
+
+                    <span>
+                        building toward.
+                    </span>
+
+                </h2>
+
+            </div>
+
+
+            <div class="build-grid">
+
 
                 <!-- Backend -->
-                <div class="skill-item">Spring Boot (Learning)</div>
-                <div class="skill-item">REST APIs</div>
-                <div class="skill-item">JDBC</div>
-                <div class="skill-item">MySQL</div>
-                <div class="skill-item">SQL</div>
 
-                <!-- Frontend -->
-                <div class="skill-item">JavaScript</div>
-                <div class="skill-item">React.js (Learning)</div>
-                <div class="skill-item">HTML5</div>
-                <div class="skill-item">CSS3</div>
+                <article class="build-card">
 
-                <!-- Tools -->
-                <div class="skill-item">Git</div>
-                <div class="skill-item">GitHub</div>
-                <div class="skill-item">Maven</div>
-                <div class="skill-item">IntelliJ IDEA</div>
-                <div class="skill-item">VS Code</div>
+                    <span class="build-number">
+                        01
+                    </span>
 
-                <!-- CS Fundamentals -->
-                <div class="skill-item">DBMS</div>
-                <div class="skill-item">Operating Systems</div>
-                <div class="skill-item">Computer Networks</div>
+                    <div>
 
-                <!-- Other Languages -->
-                <div class="skill-item">C</div>
-                <div class="skill-item">Python</div>
-            </div>
-                    </section>
+                        <i class="fas fa-server"></i>
 
-        <!-- Projects Section -->
-        <section id="projects" class="container section">
-            <h2 class="section-title">My Projects</h2>
-            <div class="projects-grid">
+                        <h3>
+                            Backend Systems
+                        </h3>
 
-                <!-- Project Card 1: Quiz App -->
-                <div class="project-card project-quiz">
-                    <!-- <img src="quiz.png" alt="Quiz App Project"> -->
-                    <h3>Interactive Quiz App</h3>
-                    <p>A fun and engaging quiz application built with JavaScript. Features multiple-choice questions, a real-time scoring system, and instant user feedback.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/mauryashreyash/Quiz-app.git" target="_blank" class="btn">View Live</a>
-                        <a href="https://github.com/mauryashreyash/Quiz-app.git" target="_blank" class="btn">Source Code</a>
+                        <p>
+
+                            Building practical applications with
+                            Java, Spring Boot, REST APIs, JDBC,
+                            and MySQL.
+
+                        </p>
+
                     </div>
-                </div>
 
-                <!-- Project Card 2: Job Board -->
-                <div class="project-card project-jobboard">
-                    <!-- <img src="jobboard.png" alt="Job Board Project"> -->
-                    <h3>Tech Job Board</h3>
-                    <p>A dynamic job board application where users can browse, search, and filter job listings. A clean interface built with frontend technologies for a great user experience.</p>
-                    <div class="project-links">
-                        <a href="#" target="_blank" class="btn">View Live</a>
-                        <a href="#" target="_blank" class="btn">Source Code</a>
-                    </div>
-                </div>
+                </article>
 
-                <!-- Project Card 3: Landing Page -->
-                <div class="project-card project-landingpage">
-                    <!-- <img src="Gemini_Generated_Image_1.png" alt="Landing Page Project"> -->
-                    <h3>Business Landing Page</h3>
-                    <p>A modern and responsive landing page for a fictional business. Designed with a focus on clean aesthetics, strong calls-to-action, and user engagement.</p>
-                    <div class="project-links">
-                        <a href="https://mauryashreyash.github.io/landing-page-website/" target="_blank" class="btn">View Live</a>
-                        <a href="https://github.com/mauryashreyash/landing-page-website.git" target="_blank" class="btn">Source Code</a>
-                    </div>
-                </div>
 
-                <!-- Project Card 4: Web calculator -->
-                <div class="project-card project-webcalculator">
-                    <!-- <img src="assets/images/calculator.jpg.jpg" alt="assets/images/calculator.jpg Project"> -->
-                    <h3>Webcalculator</h3>
-                    <p>A functional and responsive Webcalculator built with HTML, CSS, and JavaScript. It handles all basic arithmetic operations with a sleek, user-friendly interface.</p>
-                    <div class="project-links">
-                        <a href="https://mauryashreyash.github.io/web-calculator/" target="_blank" target="_blank" class="btn">View Live</a>
-                        <a href="https://github.com/mauryashreyash/web-calculator.git" target="_blank" class="btn">Source Code</a>
-                    </div>
-                </div>
+                <!-- Problem Solving -->
 
-                <!-- Project Card 5: Portfolio -->
-                <div class="project-card project-portfolio">
-                    <!-- <img src="portfolio.jpg" alt="Portfolio Project"> -->
-                    <h3>Personal Portfolio</h3>
-                    <p>The very site you are on! A personal portfolio designed and built from scratch to showcase my skills, projects, and professional journey.</p>
-                    <div class="project-links">
-                        <a href="https://mauryashreyash.github.io/personal-portfolio/" target="_blank" class="btn">View Live</a>
-                        <a href="https://github.com/mauryashreyash/personal-portfolio.git" target="_blank" class="btn">Source Code</a>
+                <article class="build-card">
+
+                    <span class="build-number">
+                        02
+                    </span>
+
+                    <div>
+
+                        <i class="fas fa-code"></i>
+
+                        <h3>
+                            Problem Solving
+                        </h3>
+
+                        <p>
+
+                            Strengthening Data Structures & Algorithms,
+                            OOP, logical thinking, and core CS
+                            fundamentals.
+
+                        </p>
+
                     </div>
-                </div>
+
+                </article>
+
+
+                <!-- Full Stack -->
+
+                <article class="build-card">
+
+                    <span class="build-number">
+                        03
+                    </span>
+
+                    <div>
+
+                        <i class="fas fa-layer-group"></i>
+
+                        <h3>
+                            Full-Stack Development
+                        </h3>
+
+                        <p>
+
+                            Connecting backend systems with modern
+                            frontend experiences using JavaScript
+                            and React.
+
+                        </p>
+
+                    </div>
+
+                </article>
 
             </div>
+
         </section>
 
-        <section id="resume" class="container section">
-    <h2 class="section-title">My Resume</h2>
-    <p>Explore my skills, experience, projects, and professional journey.</p>
 
-    <div class="resume-buttons">
-        <a href="assets/resume/shreyash_resume_updated.pdf"
-           class="btn btn-primary"
-           target="_blank"
-           rel="noopener noreferrer">
-            <i class="fas fa-eye"></i> View Resume
-        </a>
 
-        <a href="assets/resume/shreyash_resume_updated.pdf"
-           class="btn btn-secondary"
-           download>
-            <i class="fas fa-download"></i> Download Resume
-        </a>
+        <!-- =================================================
+             PROJECTS
+             ================================================= -->
+
+        <section
+            id="projects"
+            class="container section"
+        >
+
+            <div class="section-heading section-heading-row">
+
+                <div>
+
+                    <p class="section-kicker">
+                        03 — Selected Work
+                    </p>
+
+                    <h2>
+
+                        Things I've
+                        <br>
+
+                        <span>
+                            actually built.
+                        </span>
+
+                    </h2>
+
+                </div>
+
+
+                <p class="section-intro">
+
+                    A selection of projects where I turn concepts,
+                    technologies, and ideas into working software.
+
+                </p>
+
+            </div>
+
+
+            <div class="projects-grid">
+
+
+                <!-- =================================================
+                     PROJECT 01 — QUIZ APP
+                     ================================================= -->
+
+                <article
+                    class="project-card project-quiz"
+                >
+
+                    <h3>
+                        Interactive Quiz App
+                    </h3>
+
+                    <p>
+
+                        A JavaScript-based quiz application with
+                        multiple-choice questions, real-time scoring,
+                        and instant user feedback.
+
+                    </p>
+
+
+                    <div class="project-links">
+
+                        <!-- GitHub repository — not a live demo -->
+
+                        <a
+                            href="https://github.com/mauryashreyash/Quiz-app"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-ghost"
+                        >
+                            Source Code
+
+                            <i class="fas fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================================================
+                     PROJECT 02 — JOB BOARD
+                     ================================================= -->
+
+                <article
+                    class="project-card project-jobboard"
+                >
+
+                    <h3>
+                        Tech Job Board
+                    </h3>
+
+                    <p>
+
+                        A job board interface designed for browsing,
+                        searching, and filtering technology-related
+                        job listings.
+
+                    </p>
+
+
+                    <div class="project-links">
+
+                        <!--
+                            No live/repository URL was provided
+                            for this project, so fake links were removed.
+                        -->
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================================================
+                     PROJECT 03 — LANDING PAGE
+                     ================================================= -->
+
+                <article
+                    class="project-card project-landingpage"
+                >
+
+                    <h3>
+                        Business Landing Page
+                    </h3>
+
+                    <p>
+
+                        A responsive business landing page built with
+                        a focus on clean visual hierarchy, strong
+                        calls-to-action, and responsive layouts.
+
+                    </p>
+
+
+                    <div class="project-links">
+
+                        <a
+                            href="https://mauryashreyash.github.io/landing-page-website/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-primary"
+                        >
+
+                            Live Demo
+
+                            <i class="fas fa-arrow-up-right-from-square"></i>
+
+                        </a>
+
+
+                        <a
+                            href="https://github.com/mauryashreyash/landing-page-website"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-ghost"
+                        >
+
+                            Source Code
+
+                            <i class="fas fa-arrow-up-right-from-square"></i>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================================================
+                     PROJECT 04 — WEB CALCULATOR
+                     ================================================= -->
+
+                <article
+                    class="project-card project-webcalculator"
+                >
+
+                    <h3>
+                        Web Calculator
+                    </h3>
+
+                    <p>
+
+                        A responsive calculator built with HTML,
+                        CSS, and JavaScript that handles basic
+                        arithmetic operations through a clean
+                        user interface.
+
+                    </p>
+
+
+                    <div class="project-links">
+
+                        <a
+                            href="https://mauryashreyash.github.io/web-calculator/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-primary"
+                        >
+
+                            Live Demo
+
+                            <i class="fas fa-arrow-up-right-from-square"></i>
+
+                        </a>
+
+
+                        <a
+                            href="https://github.com/mauryashreyash/web-calculator"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-ghost"
+                        >
+
+                            Source Code
+
+                            <i class="fas fa-arrow-up-right-from-square"></i>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================================================
+                     PROJECT 05 — PERSONAL PORTFOLIO
+                     ================================================= -->
+
+                <article
+                    class="project-card project-portfolio"
+                >
+
+                    <h3>
+                        Personal Portfolio
+                    </h3>
+
+                    <p>
+
+                        My personal portfolio, continuously redesigned
+                        and developed to document my skills, projects,
+                        engineering journey, and professional direction.
+
+                    </p>
+
+
+                    <div class="project-links">
+
+                        <a
+                            href="https://mauryashreyash.github.io/personal-portfolio/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-primary"
+                        >
+
+                            Live Demo
+
+                            <i class="fas fa-arrow-up-right-from-square"></i>
+
+                        </a>
+
+
+                        <a
+                            href="https://github.com/mauryashreyash/personal-portfolio"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-ghost"
+                        >
+
+                            Source Code
+
+                            <i class="fas fa-arrow-up-right-from-square"></i>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SKILLS
+             ================================================= -->
+
+        <!-- =================================================
+     SKILLS
+     ================================================= -->
+
+<section
+    id="skills"
+    class="container section"
+>
+
+    <div class="section-heading">
+
+        <p class="section-kicker">
+            04 — Toolkit
+        </p>
+
+        <h2>
+            What I use to
+            <br>
+            <span>build things.</span>
+        </h2>
+
     </div>
+
+
+    <div class="skills-system">
+
+
+        <!-- ==========================================
+             CORE ENGINEERING
+             ========================================== -->
+
+        <article class="skill-category">
+
+            <div class="skill-category-header">
+
+                <span class="skill-category-number">
+                    01
+                </span>
+
+                <div>
+
+                    <p class="skill-category-label">
+                        Foundation
+                    </p>
+
+                    <h3>
+                        Core Engineering
+                    </h3>
+
+                </div>
+
+            </div>
+
+
+            <div class="skill-list">
+
+                <span class="skill">
+                    Java
+                </span>
+
+                <span class="skill">
+                    Data Structures & Algorithms
+                </span>
+
+                <span class="skill">
+                    Object-Oriented Programming
+                </span>
+
+                <span class="skill">
+                    Problem Solving
+                </span>
+
+                <span class="skill">
+                    Core Java
+                </span>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- ==========================================
+             BACKEND
+             ========================================== -->
+
+        <article class="skill-category">
+
+            <div class="skill-category-header">
+
+                <span class="skill-category-number">
+                    02
+                </span>
+
+                <div>
+
+                    <p class="skill-category-label">
+                        Server Side
+                    </p>
+
+                    <h3>
+                        Backend Development
+                    </h3>
+
+                </div>
+
+            </div>
+
+
+            <div class="skill-list">
+
+                <span class="skill skill-primary">
+                    Spring Boot
+                </span>
+
+                <span class="skill">
+                    REST APIs
+                </span>
+
+                <span class="skill">
+                    JDBC
+                </span>
+
+                <span class="skill">
+                    Maven
+                </span>
+
+                <span class="skill">
+                    Java Backend
+                </span>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- ==========================================
+             FRONTEND
+             ========================================== -->
+
+        <article class="skill-category">
+
+            <div class="skill-category-header">
+
+                <span class="skill-category-number">
+                    03
+                </span>
+
+                <div>
+
+                    <p class="skill-category-label">
+                        User Interface
+                    </p>
+
+                    <h3>
+                        Frontend Development
+                    </h3>
+
+                </div>
+
+            </div>
+
+
+            <div class="skill-list">
+
+                <span class="skill">
+                    JavaScript
+                </span>
+
+                <span class="skill">
+                    React
+                </span>
+
+                <span class="skill">
+                    HTML5
+                </span>
+
+                <span class="skill">
+                    CSS3
+                </span>
+
+                <span class="skill">
+                    Responsive Design
+                </span>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- ==========================================
+             DATABASE
+             ========================================== -->
+
+        <article class="skill-category">
+
+            <div class="skill-category-header">
+
+                <span class="skill-category-number">
+                    04
+                </span>
+
+                <div>
+
+                    <p class="skill-category-label">
+                        Data
+                    </p>
+
+                    <h3>
+                        Databases & SQL
+                    </h3>
+
+                </div>
+
+            </div>
+
+
+            <div class="skill-list">
+
+                <span class="skill skill-primary">
+                    MySQL
+                </span>
+
+                <span class="skill">
+                    SQL
+                </span>
+
+                <span class="skill">
+                    JDBC
+                </span>
+
+                <span class="skill">
+                    DBMS
+                </span>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- ==========================================
+             DEVELOPMENT TOOLS
+             ========================================== -->
+
+        <article class="skill-category">
+
+            <div class="skill-category-header">
+
+                <span class="skill-category-number">
+                    05
+                </span>
+
+                <div>
+
+                    <p class="skill-category-label">
+                        Workflow
+                    </p>
+
+                    <h3>
+                        Development Tools
+                    </h3>
+
+                </div>
+
+            </div>
+
+
+            <div class="skill-list">
+
+                <span class="skill">
+                    Git
+                </span>
+
+                <span class="skill">
+                    GitHub
+                </span>
+
+                <span class="skill">
+                    IntelliJ IDEA
+                </span>
+
+                <span class="skill">
+                    VS Code
+                </span>
+
+                <span class="skill">
+                    Apache Maven
+                </span>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- ==========================================
+             COMPUTER SCIENCE
+             ========================================== -->
+
+        <article class="skill-category">
+
+            <div class="skill-category-header">
+
+                <span class="skill-category-number">
+                    06
+                </span>
+
+                <div>
+
+                    <p class="skill-category-label">
+                        Fundamentals
+                    </p>
+
+                    <h3>
+                        Computer Science
+                    </h3>
+
+                </div>
+
+            </div>
+
+
+            <div class="skill-list">
+
+                <span class="skill">
+                    DBMS
+                </span>
+
+                <span class="skill">
+                    Operating Systems
+                </span>
+
+                <span class="skill">
+                    Computer Networks
+                </span>
+
+                <span class="skill">
+                    Software Engineering
+                </span>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+
+    <!-- ==========================================
+         CURRENT FOCUS
+         ========================================== -->
+
+    <div class="skills-focus">
+
+        <span class="skills-focus-dot"></span>
+
+        <p>
+
+            <strong>Current focus:</strong>
+
+            Strengthening Java backend development,
+            Spring Boot, REST APIs, SQL, and
+            Data Structures & Algorithms.
+
+        </p>
+
+    </div>
+
 </section>
 
-        <section id="contact" class="container section">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="contact-email">shreyashmauryaspdf@gmail.com</p>
-            <div class="social-links">
-                <a href="https://linkedin.com/in/mauryashreyash" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/mauryashreyash" target="_blank"><i class="fab fa-github"></i></a>
+
+
+        <!-- =================================================
+             RESUME
+             ================================================= -->
+
+        <section
+            id="resume"
+            class="container section"
+        >
+
+            <div class="resume-content">
+
+                <p class="section-kicker">
+                    05 — Resume
+                </p>
+
+
+                <h2>
+
+                    Want the
+                    <br>
+
+                    <span>
+                        short version?
+                    </span>
+
+                </h2>
+
+
+                <p>
+
+                    Explore my education, projects, technical skills,
+                    experience, and current software-engineering journey.
+
+                </p>
+
+
+                <div class="resume-buttons">
+
+
+                    <!-- View -->
+
+                    <a
+                        href="assets/resume/shreyash_resume_updated.pdf"
+                        class="btn btn-primary"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+
+                        <i class="fas fa-eye"></i>
+
+                        View Resume
+
+                    </a>
+
+
+                    <!-- Download -->
+
+                    <a
+                        href="assets/resume/shreyash_resume_updated.pdf"
+                        class="btn btn-ghost"
+                        download
+                    >
+
+                        <i class="fas fa-download"></i>
+
+                        Download
+
+                    </a>
+
+                </div>
+
             </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             CONTACT
+             ================================================= -->
+
+        <section
+            id="contact"
+            class="container section"
+        >
+
+            <div class="contact-content">
+
+                <p class="section-kicker">
+                    06 — Contact
+                </p>
+
+
+                <h2>
+
+                    Let's build
+                    <br>
+
+                    <span>
+                        something useful.
+                    </span>
+
+                </h2>
+
+
+                <p>
+
+                    I'm open to internships, fresher software-development
+                    opportunities, collaborations, and interesting projects.
+
+                </p>
+
+
+                <!-- Email -->
+
+                <a
+                    href="mailto:shreyashmauryaspdf@gmail.com"
+                    class="contact-email"
+                >
+
+                    shreyashmauryaspdf@gmail.com
+
+                </a>
+
+
+                <!-- Social -->
+
+                <div class="social-links">
+
+
+                    <a
+                        href="https://github.com/mauryashreyash"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="GitHub"
+                    >
+
+                        <i class="fab fa-github"></i>
+
+                    </a>
+
+
+                    <a
+                        href="https://linkedin.com/in/mauryashreyash"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="LinkedIn"
+                    >
+
+                        <i class="fab fa-linkedin"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
         </section>
 
     </main>
 
+
+
+    <!-- =================================================
+         FOOTER
+         ================================================= -->
+
     <footer>
-        <p>Copyright © 2025 - Shreyash Maurya</p>
+
+        <p>
+            © 2026 Shreyash Maurya. Built with curiosity and code.
+        </p>
+
     </footer>
 
+
+
+    <!-- =================================================
+         JAVASCRIPT
+         ================================================= -->
+
     <script>
-        // --- Header scroll effect ---
-        const header = document.getElementById('header');
+
+        /* ================================================
+           HEADER SCROLL EFFECT
+           ================================================ */
+
+        const header =
+            document.getElementById('header');
+
+
         window.addEventListener('scroll', () => {
+
             if (window.scrollY > 50) {
+
                 header.classList.add('scrolled');
+
             } else {
+
                 header.classList.remove('scrolled');
+
             }
+
         });
 
-        // --- Section fade-in on scroll effect ---
-        const sections = document.querySelectorAll('.section');
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
+
+
+        /* ================================================
+           SECTION REVEAL
+           ================================================ */
+
+        const sections =
+            document.querySelectorAll('.section');
+
+
+        const observer =
+            new IntersectionObserver(
+                (entries) => {
+
+                    entries.forEach((entry) => {
+
+                        if (entry.isIntersecting) {
+
+                            entry.target.classList.add('visible');
+
+                            observer.unobserve(entry.target);
+
+                        }
+
+                    });
+
+                },
+                {
+                    threshold: 0.1
                 }
-            });
-        }, {
-            threshold: 0.1
+            );
+
+
+        sections.forEach((section) => {
+
+            observer.observe(section);
+
         });
 
-        sections.forEach(section => {
-            observer.observe(section);
+
+
+        /* ================================================
+           MOBILE NAVIGATION
+           ================================================ */
+
+        const menuToggle =
+            document.querySelector('.menu-toggle');
+
+        const mobileMenu =
+            document.querySelector('.mobile-menu');
+
+
+        menuToggle.addEventListener('click', () => {
+
+            const isOpen =
+                mobileMenu.classList.toggle('open');
+
+
+            menuToggle.setAttribute(
+                'aria-expanded',
+                isOpen
+            );
+
+
+            menuToggle.setAttribute(
+                'aria-label',
+                isOpen
+                    ? 'Close navigation menu'
+                    : 'Open navigation menu'
+            );
+
         });
+
+
+
+        /* ================================================
+           CLOSE MOBILE MENU AFTER NAVIGATION
+           ================================================ */
+
+        document
+            .querySelectorAll('.mobile-menu a')
+            .forEach((link) => {
+
+                link.addEventListener('click', () => {
+
+                    mobileMenu.classList.remove('open');
+
+                    menuToggle.setAttribute(
+                        'aria-expanded',
+                        'false'
+                    );
+
+                    menuToggle.setAttribute(
+                        'aria-label',
+                        'Open navigation menu'
+                    );
+
+                });
+
+            });
+
+
+
+        /* ================================================
+           CLOSE MOBILE MENU WITH ESCAPE
+           ================================================ */
+
+        document.addEventListener('keydown', (event) => {
+
+            if (
+                event.key === 'Escape' &&
+                mobileMenu.classList.contains('open')
+            ) {
+
+                mobileMenu.classList.remove('open');
+
+                menuToggle.setAttribute(
+                    'aria-expanded',
+                    'false'
+                );
+
+                menuToggle.setAttribute(
+                    'aria-label',
+                    'Open navigation menu'
+                );
+
+                menuToggle.focus();
+
+            }
+
+        });
+
     </script>
+
 </body>
 
 </html>
-
