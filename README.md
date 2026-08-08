@@ -157,7 +157,9 @@ I'm currently focused on strengthening my foundation for software engineering ro
 - Backend Development
 - Full-Stack Development
 
+
 ---
+
 
 ## 📈 Development Journey
 
