@@ -351,6 +351,18 @@ h1, h2, h3 {
 }
 
 /* --- Resume Section --- */
+
+.resume-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+.btn-secondary {
+    background: transparent;
+    border: 2px solid currentColor;
+}
 #resume {
     text-align: center;
 }
