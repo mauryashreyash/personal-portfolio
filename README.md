@@ -1,48 +1,181 @@
-# Personal Portfolio Website
+# 👋 Personal Portfolio — Shreyash Maurya
 
-A modern, responsive, single-page portfolio website built from scratch using HTML, CSS, and vanilla JavaScript. Designed with a "Dark Mode & Techy" aesthetic to showcase my skills, projects, and professional journey as an aspiring Computer Science Engineer.
+### Computer Science & Engineering Student | Java Developer | Aspiring Software Engineer
 
+A modern, responsive personal portfolio website built to showcase my projects, technical skills, development journey, and experience as a Computer Science & Engineering student.
+
+🔗 **Live Portfolio:**  
+https://mauryashreyash.github.io/personal-portfolio/
 
 ---
 
-## Screenshot
+## ✨ About the Portfolio
 
-![Portfolio Screenshot](./project_ss(1).png)
-![Portfolio Screenshot](./project_ss(2).png)
-![Portfolio Screenshot](./project_ss(3).png)
-![Portfolio Screenshot](./project_ss(4).png)
-![Portfolio Screenshot](./project_ss(5).png)
+This portfolio is more than a collection of projects.
 
-## Features
+It is designed to present my journey as a developer — from building web interfaces and interactive applications to developing Java-based database systems.
 
--   **Stunning Visuals:** Dark mode theme with a vibrant accent color and a dynamic hero section background.
--   **Fully Responsive Design:** Looks great on all devices, from mobile phones to desktops.
--   **Smooth Scrolling:** Clean, single-page navigation that smoothly scrolls to each section.
--   **Interactive Elements:** Subtle hover effects and on-scroll fade-in animations for a modern user experience.
--   **Dynamic Project Cards:** Projects are showcased with background images and a text-friendly overlay.
--   **Clear Structure:** Well-organized sections for About Me, Skills, Projects, and Contact information.
+The website focuses on:
 
-## Technologies Used
+- Clean and modern visual design
+- Strong project presentation
+- Responsive layouts
+- Clear technical storytelling
+- Interactive user experience
+- Developer-focused portfolio structure
 
--   **HTML5:** For the structure and semantic markup of the website.
--   **CSS3:** For all styling, including Flexbox for layout, Grid for the project section, custom properties, and responsive media queries.
+---
 
--   **Google Fonts:** For modern and clean typography ('Poppins' and 'Roboto').
--   **Font Awesome:** For professional social media icons in the contact section.
+## 🚀 Features
 
+- **Modern Dark UI** — Minimal dark interface with a distinctive lime accent.
+- **Responsive Design** — Optimized for desktop, tablet, and mobile devices.
+- **Interactive Hero Section** — Introductory section with clear navigation and calls-to-action.
+- **Project Showcase** — Structured presentation of projects with technology tags and project links.
+- **Featured Project** — Highlights my Java + MySQL Movie & Theatre Ticket Booking System.
+- **Project Case Study** — Dedicated project-detail experience for explaining architecture, features, database design, and engineering decisions.
+- **Smooth Navigation** — Section-based navigation with smooth scrolling.
+- **Micro-interactions** — Hover effects and subtle transitions throughout the interface.
+- **Responsive Navigation** — Desktop and mobile navigation experience.
+- **Resume & Contact Sections** — Easy access to professional information and social profiles.
 
+---
 
-## How to Personalize
+## 🛠️ Technologies Used
 
-To make this portfolio your own, you'll need to customize the following in the `index.html` file:
+### Frontend
 
--   **Header & Hero:** Change the name and tagline to your own.
--   **About Section:** Update the bio and replace the placeholder image with a picture of yourself.
--   **Skills Section:** List your own skills.
--   **Projects Section:** Update the project titles, descriptions, and links. Replace the background images for each card in the `style.css` file.
--   **Resume Section:** Add your own `resume.pdf` file to the project folder.
--   **Contact Section:** Update the email and social media links (LinkedIn, GitHub).
+- HTML5
+- CSS3
+- JavaScript
+- Responsive Design
+- CSS Grid
+- Flexbox
 
-## License
+### Design & UI
 
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+- CSS Custom Properties
+- Responsive Media Queries
+- CSS Transitions & Animations
+- Google Fonts
+- Font Awesome
+
+### Development Tools
+
+- Git
+- GitHub
+- VS Code
+
+---
+
+## 📂 Featured Projects
+
+### 🎬 Movie & Theatre Ticket Booking System
+
+A CLI-based Java application connected to MySQL using JDBC and DAO architecture.
+
+**Tech Stack:**
+
+`Java` `JDBC` `MySQL` `DAO`
+
+Features include:
+
+- Admin management
+- Movie management
+- Theatre / hall management
+- Screen management
+- Show management
+- User registration and login
+- Ticket booking
+- Revenue tracking
+
+🔗 [View Repository](https://github.com/mauryashreyash/Movie-Theatre-Ticket-Booking-System)
+
+---
+
+### 🧠 Interactive Quiz App
+
+An interactive web-based quiz application focused on user interaction, question handling, and scoring.
+
+**Tech Stack:**
+
+`JavaScript` `HTML` `CSS`
+
+🔗 [View Repository](https://github.com/mauryashreyash/Quiz-app)
+
+---
+
+### 💼 Tech Job Board
+
+A responsive job-board interface designed for presenting and browsing technology-related job opportunities.
+
+**Tech Stack:**
+
+`HTML` `CSS` `JavaScript`
+
+---
+
+### 🌐 Business Landing Page
+
+A responsive landing page focused on visual hierarchy, layout, and clear calls-to-action.
+
+**Tech Stack:**
+
+`HTML` `CSS` `JavaScript`
+
+---
+
+### 🧮 Web Calculator
+
+A simple interactive calculator built to practice JavaScript logic and DOM interaction.
+
+**Tech Stack:**
+
+`HTML` `CSS` `JavaScript`
+
+---
+
+## 🎯 Current Focus
+
+I'm currently focused on strengthening my foundation for software engineering roles.
+
+### Core Focus
+
+- ☕ Java
+- 🧩 Data Structures & Algorithms
+- 🏗️ Object-Oriented Programming
+- 🗄️ SQL & MySQL
+- 🔌 JDBC
+- 🌐 Web Development
+- ⚡ JavaScript
+- 🔧 Git & GitHub
+
+### Exploring
+
+- Spring Boot
+- REST APIs
+- Backend Development
+- Full-Stack Development
+
+---
+
+## 📈 Development Journey
+
+My learning journey is centered around building projects while continuously strengthening my programming fundamentals.
+
+```text
+Programming Fundamentals
+        ↓
+Java & OOP
+        ↓
+Data Structures & Algorithms
+        ↓
+SQL & Databases
+        ↓
+JDBC & Backend Fundamentals
+        ↓
+Web Development
+        ↓
+Spring Boot & REST APIs
+        ↓
+Software Engineering
