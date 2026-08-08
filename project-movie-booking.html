@@ -1,0 +1,1524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Movie & Theatre Ticket Booking System — Java, JDBC, MySQL and DAO architecture."
+    >
+
+    <title>
+        Movie & Theatre Ticket Booking System — Shreyash Maurya
+    </title>
+
+
+    <!-- Google Fonts -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- Font Awesome -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <!-- Main Portfolio Styles -->
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+
+    <!-- Project Page Styles -->
+
+<style>
+
+/* =========================================================
+   MOVIE BOOKING — PROJECT DETAIL DESIGN
+   ========================================================= */
+
+.project-page {
+    min-height: 100vh;
+    background: var(--color-bg);
+}
+
+
+/* =========================================================
+   PROJECT HERO
+   ========================================================= */
+
+.project-detail-hero {
+    position: relative;
+
+    min-height: 78vh;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    border-bottom: 1px solid var(--color-border);
+
+    background:
+        radial-gradient(
+            circle at 78% 30%,
+            rgba(216, 255, 62, 0.10),
+            transparent 28%
+        ),
+        var(--color-bg);
+}
+
+
+/* Technical grid */
+
+.project-detail-hero::before {
+    content: '';
+
+    position: absolute;
+    inset: 0;
+
+    background-image:
+        linear-gradient(
+            rgba(255,255,255,0.025) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,0.025) 1px,
+            transparent 1px
+        );
+
+    background-size: 80px 80px;
+
+    mask-image:
+        linear-gradient(
+            to bottom,
+            black 0%,
+            transparent 90%
+        );
+
+    pointer-events: none;
+}
+
+
+/* Large decorative number */
+
+.project-detail-hero::after {
+    content: '01';
+
+    position: absolute;
+
+    right: -2rem;
+    bottom: -5rem;
+
+    font-family: var(--font-heading);
+
+    font-size:
+        clamp(15rem, 30vw, 32rem);
+
+    font-weight: 700;
+
+    line-height: 1;
+
+    letter-spacing: -0.08em;
+
+    color:
+        rgba(255,255,255,0.018);
+
+    pointer-events: none;
+}
+
+
+.project-detail-hero-content {
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+
+    padding-top: 9rem;
+    padding-bottom: 7rem;
+}
+
+
+/* =========================================================
+   BACK LINK
+   ========================================================= */
+
+.back-link {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 0.6rem;
+
+    margin-bottom: 3.5rem;
+
+    color: var(--color-text-muted);
+
+    font-size: var(--text-sm);
+
+    transition:
+        color var(--duration-fast) ease,
+        transform var(--duration-fast) ease;
+}
+
+
+.back-link:hover {
+    color: var(--color-text);
+
+    transform: translateX(-3px);
+}
+
+
+.back-link i {
+    color: var(--color-accent);
+}
+
+
+/* =========================================================
+   HERO TYPOGRAPHY
+   ========================================================= */
+
+.project-detail-kicker {
+    margin-bottom: 1.5rem;
+
+    color: var(--color-accent);
+
+    font-size: var(--text-xs);
+
+    font-weight: var(--weight-semibold);
+
+    letter-spacing: 0.15em;
+
+    text-transform: uppercase;
+}
+
+
+.project-detail-hero h1 {
+    max-width: 1050px;
+
+    margin: 0;
+
+    font-family: var(--font-heading);
+
+    font-size:
+        clamp(3.3rem, 8vw, 7rem);
+
+    font-weight: var(--weight-semibold);
+
+    line-height: 0.94;
+
+    letter-spacing: -0.065em;
+}
+
+
+.project-detail-hero h1 span {
+    display: block;
+
+    color: var(--color-text-muted);
+}
+
+
+.project-detail-description {
+    max-width: 700px;
+
+    margin-top: 2rem;
+
+    color: var(--color-text-secondary);
+
+    font-size:
+        clamp(1rem, 1.5vw, 1.2rem);
+
+    line-height: var(--leading-relaxed);
+}
+
+
+/* =========================================================
+   TECHNOLOGY
+   ========================================================= */
+
+.project-detail-tech {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 0.5rem;
+
+    margin-top: 2rem;
+}
+
+
+.project-detail-tech span {
+    padding:
+        0.45rem 0.75rem;
+
+    color: var(--color-text-secondary);
+
+    font-size: var(--text-xs);
+
+    border:
+        1px solid var(--color-border);
+
+    border-radius: var(--radius-sm);
+
+    background:
+        rgba(255,255,255,0.02);
+}
+
+
+/* =========================================================
+   HERO ACTIONS
+   ========================================================= */
+
+.project-detail-actions {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 0.75rem;
+
+    margin-top: 2.5rem;
+}
+
+
+/* =========================================================
+   MAIN CONTENT
+   ========================================================= */
+
+.project-detail-content {
+    padding-top: 9rem;
+
+    padding-bottom: 9rem;
+}
+
+
+.project-detail-grid {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.5fr)
+        minmax(220px, 0.5fr);
+
+    gap: 7rem;
+}
+
+
+.project-detail-main {
+    min-width: 0;
+}
+
+
+.project-detail-sidebar {
+    position: sticky;
+
+    top: 7rem;
+
+    align-self: start;
+}
+
+
+/* =========================================================
+   DETAIL SECTIONS
+   ========================================================= */
+
+.detail-section {
+    position: relative;
+
+    padding-bottom: 6rem;
+
+    margin-bottom: 6rem;
+
+    border-bottom:
+        1px solid var(--color-border);
+}
+
+
+.detail-section:last-child {
+    margin-bottom: 0;
+
+    border-bottom: none;
+}
+
+
+.detail-number {
+    display: block;
+
+    margin-bottom: 1rem;
+
+    color: var(--color-accent);
+
+    font-size: var(--text-xs);
+
+    font-weight: var(--weight-semibold);
+
+    letter-spacing: 0.12em;
+
+    text-transform: uppercase;
+}
+
+
+.detail-section h2 {
+    max-width: 800px;
+
+    margin-bottom: 1.5rem;
+
+    font-size:
+        clamp(2.2rem, 4vw, 3.8rem);
+
+    line-height: 0.98;
+
+    letter-spacing: -0.055em;
+}
+
+
+.detail-section > p {
+    max-width: 760px;
+
+    color: var(--color-text-secondary);
+
+    font-size: 1.05rem;
+
+    line-height: var(--leading-relaxed);
+}
+
+
+/* =========================================================
+   FEATURE GRID
+   ========================================================= */
+
+.feature-list {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 1px;
+
+    margin-top: 2.5rem;
+
+    overflow: hidden;
+
+    border:
+        1px solid var(--color-border);
+
+    border-radius:
+        var(--radius-lg);
+
+    background:
+        var(--color-border);
+}
+
+
+.feature-item {
+    min-height: 190px;
+
+    padding: 1.75rem;
+
+    background:
+        var(--color-bg);
+
+    transition:
+        background-color var(--duration-normal) ease;
+}
+
+
+.feature-item:hover {
+    background:
+        var(--color-surface);
+}
+
+
+.feature-item i {
+    display: inline-grid;
+
+    place-items: center;
+
+    width: 2.2rem;
+    height: 2.2rem;
+
+    margin-bottom: 1.25rem;
+
+    color: var(--color-accent);
+
+    border:
+        1px solid
+        rgba(216,255,62,0.18);
+
+    border-radius:
+        var(--radius-sm);
+
+    background:
+        rgba(216,255,62,0.04);
+}
+
+
+.feature-item h3 {
+    margin-bottom: 0.5rem;
+
+    font-size: 1rem;
+}
+
+
+.feature-item p {
+    margin: 0;
+
+    color: var(--color-text-muted);
+
+    font-size: var(--text-sm);
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   ARCHITECTURE
+   ========================================================= */
+
+.architecture-wrapper {
+    margin-top: 2.5rem;
+}
+
+
+.architecture {
+    position: relative;
+
+    padding: 2.5rem;
+
+    overflow-x: auto;
+
+    border:
+        1px solid var(--color-border);
+
+    border-radius:
+        var(--radius-lg);
+
+    background:
+        var(--color-surface);
+
+    box-shadow:
+        var(--shadow-sm);
+
+    font-family:
+        'Courier New',
+        monospace;
+
+    color:
+        var(--color-text-secondary);
+
+    line-height:
+        2;
+}
+
+
+.architecture::before {
+    content: 'SYSTEM FLOW';
+
+    position: absolute;
+
+    top: 1rem;
+    right: 1.25rem;
+
+    color:
+        var(--color-text-muted);
+
+    font-family:
+        var(--font-body);
+
+    font-size:
+        0.65rem;
+
+    letter-spacing:
+        0.12em;
+}
+
+
+.architecture .highlight {
+    color:
+        var(--color-accent);
+}
+
+
+/* =========================================================
+   DATABASE VISUALIZATION
+   ========================================================= */
+
+.database-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 0.75rem;
+
+    margin-top: 2.5rem;
+}
+
+
+.database-table {
+    padding: 1rem;
+
+    border:
+        1px solid var(--color-border);
+
+    border-radius:
+        var(--radius-sm);
+
+    background:
+        var(--color-surface);
+
+    color:
+        var(--color-text-secondary);
+
+    font-family:
+        'Courier New',
+        monospace;
+
+    font-size:
+        var(--text-xs);
+
+    transition:
+        border-color var(--duration-fast) ease,
+        transform var(--duration-fast) ease;
+}
+
+
+.database-table:hover {
+    border-color:
+        rgba(216,255,62,0.30);
+
+    transform:
+        translateY(-2px);
+}
+
+
+.database-table::before {
+    content: 'TABLE';
+
+    display: block;
+
+    margin-bottom: 0.35rem;
+
+    color:
+        var(--color-accent);
+
+    font-family:
+        var(--font-body);
+
+    font-size:
+        0.6rem;
+
+    letter-spacing:
+        0.1em;
+}
+
+
+
+/* =========================================================
+   ENGINEERING INSIGHT
+   ========================================================= */
+
+.engineering-note {
+    margin-top: 2.5rem;
+
+    padding: 2rem;
+
+    border-left:
+        2px solid var(--color-accent);
+
+    background:
+        var(--color-surface);
+}
+
+
+.engineering-note p {
+    margin: 0;
+
+    color:
+        var(--color-text-secondary);
+
+    font-size:
+        1rem;
+
+    line-height:
+        1.8;
+}
+
+
+/* =========================================================
+   SIDEBAR
+   ========================================================= */
+
+.sidebar-block {
+    padding-bottom: 1.75rem;
+
+    margin-bottom: 1.75rem;
+
+    border-bottom:
+        1px solid var(--color-border);
+}
+
+
+.sidebar-block:last-child {
+    border-bottom: none;
+}
+
+
+.sidebar-label {
+    margin-bottom: 0.65rem;
+
+    color:
+        var(--color-text-muted);
+
+    font-size:
+        var(--text-xs);
+
+    font-weight:
+        var(--weight-semibold);
+
+    letter-spacing:
+        0.1em;
+
+    text-transform:
+        uppercase;
+}
+
+
+.sidebar-value {
+    color:
+        var(--color-text);
+
+    font-size:
+        var(--text-sm);
+
+    line-height:
+        1.7;
+}
+
+
+.sidebar-value a {
+    color:
+        var(--color-text);
+
+    transition:
+        color var(--duration-fast) ease;
+}
+
+
+.sidebar-value a:hover {
+    color:
+        var(--color-accent);
+}
+
+
+/* =========================================================
+   FINAL CTA
+   ========================================================= */
+
+.project-final-cta {
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 4rem;
+
+    border:
+        1px solid var(--color-border);
+
+    border-radius:
+        var(--radius-xl);
+
+    background:
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(216,255,62,0.08),
+            transparent 30%
+        ),
+        var(--color-surface);
+}
+
+
+.project-final-cta::after {
+    content: '';
+
+    position: absolute;
+
+    width: 220px;
+    height: 220px;
+
+    right: -100px;
+    bottom: -120px;
+
+    border-radius: 50%;
+
+    border:
+        1px solid
+        rgba(216,255,62,0.12);
+}
+
+
+.project-final-cta h2 {
+    max-width: 700px;
+
+    margin-bottom: 1rem;
+}
+
+
+.project-final-cta p {
+    max-width: 600px;
+
+    margin-bottom: 2rem;
+
+    color:
+        var(--color-text-muted);
+}
+
+
+/* =========================================================
+   PROJECT PAGE FOOTER
+   ========================================================= */
+
+.project-page-footer {
+    padding:
+        2rem 0;
+
+    border-top:
+        1px solid var(--color-border);
+
+    text-align: center;
+}
+
+
+.project-page-footer p {
+    color:
+        var(--color-text-muted);
+
+    font-size:
+        var(--text-xs);
+}
+
+
+.project-page-footer a {
+    color:
+        var(--color-text);
+
+    transition:
+        color var(--duration-fast) ease;
+}
+
+
+.project-page-footer a:hover {
+    color:
+        var(--color-accent);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .project-detail-grid {
+        grid-template-columns:
+            1fr;
+
+        gap: 4rem;
+    }
+
+
+    .project-detail-sidebar {
+        position: static;
+    }
+
+
+    .database-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .project-detail-hero {
+        min-height:
+            90svh;
+    }
+
+
+    .project-detail-hero-content {
+        padding-top:
+            7rem;
+
+        padding-bottom:
+            5rem;
+    }
+
+
+    .project-detail-hero h1 {
+        font-size:
+            clamp(3rem, 14vw, 5rem);
+    }
+
+
+    .project-detail-description {
+        font-size:
+            1rem;
+    }
+
+
+    .project-detail-actions {
+        flex-direction:
+            column;
+    }
+
+
+    .project-detail-actions .btn {
+        width:
+            100%;
+    }
+
+
+    .project-detail-content {
+        padding-top:
+            5rem;
+
+        padding-bottom:
+            5rem;
+    }
+
+
+    .detail-section {
+        padding-bottom:
+            4rem;
+
+        margin-bottom:
+            4rem;
+    }
+
+
+    .feature-list {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .database-grid {
+        grid-template-columns:
+            1fr 1fr;
+    }
+
+
+    .architecture {
+        padding:
+            1.5rem;
+
+        font-size:
+            0.8rem;
+    }
+
+
+    .project-final-cta {
+        padding:
+            2rem;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body class="project-page">
+
+
+    <!-- ================= PROJECT HERO ================= -->
+
+    <header class="project-detail-hero">
+
+        <div class="container project-detail-hero-content">
+
+            <a
+                href="index.html#projects"
+                class="back-link"
+            >
+                <i class="fas fa-arrow-left"></i>
+                Back to Projects
+            </a>
+
+
+            <p class="project-detail-kicker">
+                01 — Featured Project
+            </p>
+
+
+            <h1>
+                Movie & Theatre
+                <span>Ticket Booking System</span>
+            </h1>
+
+
+            <p class="project-detail-description">
+                A console-based Movie/Theatre Ticket Booking System
+                developed using Java, JDBC, and MySQL. The system
+                demonstrates database-driven operations through a
+                Command Line Interface and follows DAO architecture
+                to separate application logic from database operations.
+            </p>
+
+
+            <div class="project-detail-tech">
+
+                <span>Java</span>
+                <span>JDBC</span>
+                <span>MySQL</span>
+                <span>DAO</span>
+                <span>MySQL Connector/J</span>
+
+            </div>
+
+
+            <div class="project-detail-actions">
+
+                <a
+                    href="https://github.com/mauryashreyash/Movie-Theatre-Ticket-Booking-System"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary"
+                >
+                    View Source
+                    <i class="fab fa-github"></i>
+                </a>
+
+
+                <a
+                    href="https://drive.google.com/file/d/17W3FtPDTfIkznAkrrMILPgVtcB7grzrW/view?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-ghost"
+                >
+                    Watch Demo
+                    <i class="fas fa-play"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================= PROJECT CONTENT ================= -->
+
+    <main class="project-detail-content">
+
+        <div class="container">
+
+            <div class="project-detail-grid">
+
+
+                <!-- ================= MAIN ================= -->
+
+                <div class="project-detail-main">
+
+
+                    <!-- 01 -->
+
+                    <section class="detail-section">
+
+                        <span class="detail-number">
+                            01 — Overview
+                        </span>
+
+                        <h2>
+                            What I built.
+                        </h2>
+
+                        <p>
+                            The project automates a movie ticket booking
+                            workflow through a command-line application.
+                            It provides separate Admin and User flows
+                            while using MySQL for persistent application
+                            data.
+                        </p>
+
+                    </section>
+
+
+
+                    <!-- 02 -->
+
+                    <section class="detail-section">
+
+                        <span class="detail-number">
+                            02 — The Problem
+                        </span>
+
+                        <h2>
+                            Why it exists.
+                        </h2>
+
+                        <p>
+                            Manual movie ticket booking and management
+                            can become time-consuming and error-prone.
+                            This project explores how a structured
+                            Java application and relational database
+                            can automate the management of movies,
+                            theatres, shows, users, and bookings.
+                        </p>
+
+                    </section>
+
+
+
+                    <!-- 03 -->
+
+                    <section class="detail-section">
+
+                        <span class="detail-number">
+                            03 — Features
+                        </span>
+
+                        <h2>
+                            What it can do.
+                        </h2>
+
+
+                        <div class="feature-list">
+
+
+                            <div class="feature-item">
+
+                                <i class="fas fa-user-shield"></i>
+
+                                <h3>
+                                    Admin Module
+                                </h3>
+
+                                <p>
+                                    Admin login and management
+                                    operations.
+                                </p>
+
+                            </div>
+
+
+                            <div class="feature-item">
+
+                                <i class="fas fa-film"></i>
+
+                                <h3>
+                                    Movie Management
+                                </h3>
+
+                                <p>
+                                    Add and view movie records.
+                                </p>
+
+                            </div>
+
+
+                            <div class="feature-item">
+
+                                <i class="fas fa-building"></i>
+
+                                <h3>
+                                    Theatre Management
+                                </h3>
+
+                                <p>
+                                    Manage halls and screens.
+                                </p>
+
+                            </div>
+
+
+                            <div class="feature-item">
+
+                                <i class="fas fa-calendar-days"></i>
+
+                                <h3>
+                                    Show Management
+                                </h3>
+
+                                <p>
+                                    Create and view scheduled shows.
+                                </p>
+
+                            </div>
+
+
+                            <div class="feature-item">
+
+                                <i class="fas fa-ticket"></i>
+
+                                <h3>
+                                    Ticket Booking
+                                </h3>
+
+                                <p>
+                                    Database-driven ticket booking
+                                    through the User module.
+                                </p>
+
+                            </div>
+
+
+                            <div class="feature-item">
+
+                                <i class="fas fa-chart-line"></i>
+
+                                <h3>
+                                    Revenue Dashboard
+                                </h3>
+
+                                <p>
+                                    View revenue information from
+                                    booking data.
+                                </p>
+
+                            </div>
+
+
+                        </div>
+
+                    </section>
+
+
+
+                    <!-- 04 -->
+
+                    <section class="detail-section">
+
+                        <span class="detail-number">
+                            04 — Architecture
+                        </span>
+
+                        <h2>
+                            How the system works.
+                        </h2>
+
+                        <p>
+                            The project follows a DAO (Data Access
+                            Object) architecture. Database operations
+                            are separated from the rest of the
+                            application, making the codebase easier
+                            to organize and maintain.
+                        </p>
+
+
+                        <div class="architecture">
+
+                            <span class="highlight">
+                                User / Admin
+                            </span>
+
+                            <br>
+                            ↓
+                            <br>
+
+                            <span class="highlight">
+                                Main Application
+                            </span>
+
+                            <br>
+                            ↓
+                            <br>
+
+                            Business / Application Logic
+
+                            <br>
+                            ↓
+                            <br>
+
+                            <span class="highlight">
+                                DAO Layer
+                            </span>
+
+                            <br>
+                            ↓
+                            <br>
+
+                            <span class="highlight">
+                                JDBC
+                            </span>
+
+                            <br>
+                            ↓
+                            <br>
+
+                            <span class="highlight">
+                                MySQL Database
+                            </span>
+
+                        </div>
+
+                    </section>
+
+
+
+                    <!-- 05 -->
+
+                    <section class="detail-section">
+
+                        <span class="detail-number">
+                            05 — Database
+                        </span>
+
+                        <h2>
+                            Data behind the system.
+                        </h2>
+
+                        <p>
+                            The application uses a MySQL database
+                            named <strong>movie_db</strong>. The
+                            repository documents tables for admins,
+                            movies, halls, screens, shows, users,
+                            and bookings.
+                        </p>
+
+
+                            <div class="database-grid">
+
+                                <div class="database-table">admin</div>
+                                <div class="database-table">movies</div>
+                                <div class="database-table">halls</div>
+                                <div class="database-table">screens</div>
+                                <div class="database-table">shows</div>
+                                <div class="database-table">users</div>
+                                <div class="database-table">bookings</div>
+
+                            </div>
+
+                    </section>
+                     <!-- 06 -->
+
+<section class="detail-section">
+
+    <span class="detail-number">
+        06 — Engineering
+    </span>
+
+    <h2>
+        What I learned.
+    </h2>
+
+    <p>
+        Building this project gave me hands-on
+        experience with Java JDBC, DAO architecture,
+        MySQL schema design, database debugging,
+        and building a CLI-based application around
+        persistent data.
+    </p>
+
+    <div class="engineering-note">
+
+        <p>
+            One of the key learning outcomes from this
+            project was understanding how a Java application
+            can interact with persistent relational data
+            through JDBC while keeping database access
+            organized through the DAO layer.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+                    <!-- 06 -->
+
+                    <section class="detail-section">
+
+                        <span class="detail-number">
+                            06 — Engineering
+                        </span>
+
+                        <h2>
+                            What I learned.
+                        </h2>
+
+                        <p>
+                            Building this project gave me hands-on
+                            experience with Java JDBC, DAO architecture,
+                            MySQL schema design, database debugging,
+                            and building a CLI-based application around
+                            persistent data.
+                        </p>
+
+                    </section>
+
+
+
+                    <!-- 07 -->
+
+                    <section class="detail-section">
+
+                        <span class="detail-number">
+                            07 — Project Resources
+                        </span>
+
+                        <h2>
+                            Explore the project.
+                        </h2>
+
+
+                        <div class="project-final-cta">
+
+                            <h2>
+                                See the code.
+                            </h2>
+
+                            <p>
+                                Explore the implementation, project
+                                documentation, and source code on GitHub.
+                            </p>
+
+
+                            <div class="project-detail-actions">
+
+                                <a
+                                    href="https://github.com/mauryashreyash/Movie-Theatre-Ticket-Booking-System"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="btn btn-primary"
+                                >
+                                    GitHub Repository
+                                    <i class="fab fa-github"></i>
+                                </a>
+
+
+                                <a
+                                    href="https://drive.google.com/file/d/17W3FtPDTfIkznAkrrMILPgVtcB7grzrW/view?usp=drive_link"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="btn btn-ghost"
+                                >
+                                    Watch Demo
+                                    <i class="fas fa-play"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                </div>
+
+
+
+                <!-- ================= SIDEBAR ================= -->
+
+                <aside class="project-detail-sidebar">
+
+
+                    <div class="sidebar-block">
+
+                        <p class="sidebar-label">
+                            Type
+                        </p>
+
+                        <p class="sidebar-value">
+                            CLI Application
+                        </p>
+
+                    </div>
+
+
+                    <div class="sidebar-block">
+
+                        <p class="sidebar-label">
+                            Stack
+                        </p>
+
+                        <p class="sidebar-value">
+                            Java<br>
+                            JDBC<br>
+                            MySQL
+                        </p>
+
+                    </div>
+
+
+                    <div class="sidebar-block">
+
+                        <p class="sidebar-label">
+                            Architecture
+                        </p>
+
+                        <p class="sidebar-value">
+                            DAO
+                        </p>
+
+                    </div>
+
+
+                    <div class="sidebar-block">
+
+                        <p class="sidebar-label">
+                            Database
+                        </p>
+
+                        <p class="sidebar-value">
+                            movie_db
+                        </p>
+
+                    </div>
+
+
+                    <div class="sidebar-block">
+
+                        <p class="sidebar-label">
+                            Repository
+                        </p>
+
+                        <p class="sidebar-value">
+
+                            <a
+                                href="https://github.com/mauryashreyash/Movie-Theatre-Ticket-Booking-System"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                GitHub
+                                <i class="fas fa-arrow-up-right-from-square"></i>
+                            </a>
+
+                        </p>
+
+                    </div>
+
+
+                </aside>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+</body>
+
+</html>

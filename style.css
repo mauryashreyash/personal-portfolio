@@ -1097,8 +1097,9 @@ strong {
 }
 
 
+
 /* =========================================================
-   12. PROJECTS
+   12. PROJECTS — PHASE 2.3
    ========================================================= */
 
 .projects-grid {
@@ -1111,10 +1112,12 @@ strong {
 }
 
 
+/* ---------- Base Project Card ---------- */
+
 .project-card {
     position: relative;
 
-    min-height: 430px;
+    min-height: 470px;
 
     display: flex;
 
@@ -1124,22 +1127,28 @@ strong {
 
     overflow: hidden;
 
-    padding-top: 12rem;
-
     border:
         1px solid var(--color-border);
 
-    border-radius: var(--radius-lg);
+    border-radius:
+        var(--radius-lg);
 
-    background-color: var(--color-surface);
+    background-color:
+        var(--color-surface);
 
-    background-size: cover;
+    background-size:
+        cover;
 
-    background-position: center;
+    background-position:
+        center;
 
-    background-repeat: no-repeat;
+    background-repeat:
+        no-repeat;
 
-    box-shadow: var(--shadow-sm);
+    box-shadow:
+        var(--shadow-sm);
+
+    isolation: isolate;
 
     transition:
         transform var(--duration-normal) var(--ease-standard),
@@ -1148,6 +1157,8 @@ strong {
 }
 
 
+/* ---------- Dark Image Treatment ---------- */
+
 .project-card::before {
     content: '';
 
@@ -1155,80 +1166,297 @@ strong {
 
     inset: 0;
 
+    z-index: -1;
+
     background:
         linear-gradient(
             to top,
-            rgba(0,0,0,0.94) 0%,
-            rgba(0,0,0,0.72) 48%,
-            rgba(0,0,0,0.12) 100%
+            rgba(5, 5, 6, 0.97) 0%,
+            rgba(5, 5, 6, 0.82) 42%,
+            rgba(5, 5, 6, 0.25) 82%,
+            rgba(5, 5, 6, 0.08) 100%
+        );
+}
+
+
+/* ---------- Subtle Accent Glow ---------- */
+
+.project-card::after {
+    content: '';
+
+    position: absolute;
+
+    width: 260px;
+    height: 260px;
+
+    right: -120px;
+    top: -120px;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(216, 255, 62, 0.12),
+            transparent 70%
         );
 
-    z-index: 1;
+    opacity: 0;
+
+    transition:
+        opacity var(--duration-normal) ease;
+
+    pointer-events: none;
 }
 
 
 .project-card:hover {
-    transform: translateY(-6px);
+    transform:
+        translateY(-7px);
 
     border-color:
-        rgba(216, 255, 62, 0.35);
+        rgba(216, 255, 62, 0.30);
 
-    box-shadow: var(--shadow-md);
+    box-shadow:
+        var(--shadow-md);
 }
 
 
-.project-card h3,
-.project-card p,
-.project-card .project-links {
+.project-card:hover::after {
+    opacity: 1;
+}
+
+
+/* ---------- Featured Project ---------- */
+
+.project-featured {
+    grid-column:
+        1 / -1;
+
+    min-height:
+        560px;
+}
+.project-featured.project-movie {
+    border-color:
+        rgba(216, 255, 62, 0.22);
+}
+
+.project-featured.project-movie::before {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(5, 5, 6, 0.98) 0%,
+            rgba(5, 5, 6, 0.88) 45%,
+            rgba(5, 5, 6, 0.52) 100%
+        );
+}
+/* ---------- Featured Java Project ---------- */
+
+.project-movie {
+    background:
+        radial-gradient(
+            circle at 78% 25%,
+            rgba(216, 255, 62, 0.14),
+            transparent 28%
+        ),
+        linear-gradient(
+            135deg,
+            #111214 0%,
+            #0b0b0c 55%,
+            #15181a 100%
+        );
+}
+
+
+/* ---------- Content ---------- */
+
+.project-content {
     position: relative;
 
     z-index: 2;
+
+    padding:
+        var(--space-8);
+}
+
+
+/* ---------- Top Row ---------- */
+
+.project-top {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: var(--space-4);
+
+    margin-bottom:
+        var(--space-16);
+}
+
+
+.project-number {
+    color:
+        var(--color-text);
+
+    font-size:
+        var(--text-xs);
+
+    font-weight:
+        var(--weight-semibold);
+
+    letter-spacing:
+        0.08em;
+
+    text-transform:
+        uppercase;
+}
+
+
+.project-type {
+    padding:
+        0.4rem
+        0.7rem;
+
+    color:
+        var(--color-text-secondary);
+
+    font-size:
+        var(--text-xs);
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.16);
+
+    border-radius:
+        var(--radius-pill);
+
+    background:
+        rgba(0, 0, 0, 0.20);
+
+    backdrop-filter:
+        blur(8px);
+}
+
+
+/* ---------- Project Information ---------- */
+
+.project-info {
+    max-width:
+        680px;
 }
 
 
 .project-card h3 {
-    padding:
-        0
-        var(--space-6);
+    margin: 0;
 
-    color: #ffffff;
+    color:
+        var(--color-text);
 
-    font-size: 1.5rem;
+    font-family:
+        var(--font-heading);
 
-    text-shadow:
-        0 2px 8px rgba(0,0,0,0.6);
+    font-size:
+        clamp(1.6rem, 3vw, 2.4rem);
+
+    font-weight:
+        var(--weight-semibold);
+
+    line-height:
+        var(--leading-snug);
+
+    letter-spacing:
+        -0.04em;
 }
 
 
 .project-card p {
-    padding:
-        var(--space-3)
-        var(--space-6)
+    max-width:
+        600px;
+
+    margin:
+        var(--space-4)
+        0
         0;
 
     color:
-        rgba(255,255,255,0.78);
+        rgba(255, 255, 255, 0.72);
 
-    line-height: 1.65;
+    font-size:
+        var(--text-base);
 
-    text-shadow:
-        0 2px 6px rgba(0,0,0,0.6);
+    line-height:
+        var(--leading-relaxed);
 }
 
+
+/* ---------- Technology Tags ---------- */
+
+.project-tech {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 0.45rem;
+
+    margin-top:
+        var(--space-5);
+}
+
+
+.project-tech span {
+    padding:
+        0.35rem
+        0.65rem;
+
+    color:
+        rgba(255, 255, 255, 0.72);
+
+    font-size:
+        var(--text-xs);
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.14);
+
+    border-radius:
+        var(--radius-sm);
+
+    background:
+        rgba(0, 0, 0, 0.18);
+}
+
+
+/* ---------- Project Links ---------- */
 
 .project-links {
     display: flex;
 
     flex-wrap: wrap;
 
-    gap: var(--space-2);
+    gap: var(--space-3);
 
-    padding:
+    margin-top:
         var(--space-6);
 }
 
 
-/* ---------- Project Images ---------- */
+.project-links .btn {
+    min-height:
+        2.75rem;
+
+    padding:
+        0.65rem
+        1rem;
+}
+
+
+.project-links .btn i {
+    font-size:
+        0.75rem;
+}
+
+
+/* ---------- Existing Project Images ---------- */
 
 .project-quiz {
     background-image:
@@ -1257,6 +1485,74 @@ strong {
 .project-portfolio {
     background-image:
         url('assets/images/portfolio (2).jpg');
+}
+
+
+/* =========================================================
+   PROJECTS — RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .project-featured {
+        grid-column:
+            auto;
+
+        min-height:
+            470px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .projects-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .project-card,
+    .project-featured {
+        min-height:
+            430px;
+    }
+
+
+    .project-content {
+        padding:
+            var(--space-6);
+    }
+
+
+    .project-top {
+        margin-bottom:
+            var(--space-12);
+    }
+
+
+    .project-card h3 {
+        font-size:
+            1.5rem;
+    }
+
+
+    .project-card p {
+        font-size:
+            0.95rem;
+    }
+
+
+    .project-links {
+        flex-direction:
+            column;
+    }
+
+
+    .project-links .btn {
+        width:
+            100%;
+    }
 }
 
 
