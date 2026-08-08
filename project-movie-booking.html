@@ -857,6 +857,22 @@
 
 @media (max-width: 600px) {
 
+    .terminal-body {
+        min-height: 280px;
+
+        padding: 1.25rem;
+
+        font-size: 0.72rem;
+    }
+
+
+    .architecture {
+        padding:
+            1.5rem 1rem;
+    }
+
+
+
     .project-detail-hero {
         min-height:
             90svh;
@@ -940,6 +956,264 @@
             2rem;
     }
 
+}
+
+/* =========================================================
+   TERMINAL SHOWCASE
+   ========================================================= */
+
+.project-showcase {
+    overflow: visible;
+}
+
+
+.terminal-window {
+    margin-top: 2.5rem;
+
+    overflow: hidden;
+
+    border:
+        1px solid var(--color-border);
+
+    border-radius:
+        var(--radius-lg);
+
+    background:
+        #0a0a0b;
+
+    box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.35);
+}
+
+
+.terminal-header {
+    display: flex;
+
+    align-items: center;
+
+    gap: 1rem;
+
+    height: 3rem;
+
+    padding:
+        0 1rem;
+
+    border-bottom:
+        1px solid var(--color-border);
+
+    background:
+        #111113;
+}
+
+
+.terminal-dots {
+    display: flex;
+
+    gap: 0.4rem;
+}
+
+
+.terminal-dots span {
+    width: 8px;
+    height: 8px;
+
+    border-radius: 50%;
+
+    background:
+        var(--color-text-muted);
+}
+
+
+.terminal-title {
+    color:
+        var(--color-text-muted);
+
+    font-family:
+        'Courier New',
+        monospace;
+
+    font-size:
+        0.7rem;
+}
+
+
+.terminal-body {
+    min-height: 320px;
+
+    padding: 2rem;
+
+    color:
+        var(--color-text-secondary);
+
+    font-family:
+        'Courier New',
+        monospace;
+
+    font-size:
+        0.85rem;
+
+    line-height:
+        1.8;
+}
+
+
+.terminal-muted {
+    color:
+        var(--color-text-muted);
+}
+
+
+.terminal-accent {
+    color:
+        var(--color-accent);
+}
+
+
+.terminal-option {
+    color:
+        var(--color-text);
+
+    margin-right:
+        0.5rem;
+}
+
+
+.terminal-cursor {
+    color:
+        var(--color-accent);
+
+    animation:
+        terminalBlink 1s step-end infinite;
+}
+
+
+@keyframes terminalBlink {
+
+    50% {
+        opacity: 0;
+    }
+
+}
+
+/* =========================================================
+   ARCHITECTURE FLOW
+   ========================================================= */
+
+.architecture {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 0.7rem;
+
+    padding: 2.5rem 1.5rem;
+
+    margin-top: 2.5rem;
+
+    border:
+        1px solid var(--color-border);
+
+    border-radius:
+        var(--radius-lg);
+
+    background:
+        var(--color-surface);
+}
+
+
+.architecture-node {
+    width: min(100%, 420px);
+
+    padding:
+        1.25rem 1.5rem;
+
+    border:
+        1px solid var(--color-border);
+
+    border-radius:
+        var(--radius-md);
+
+    background:
+        var(--color-bg);
+
+    text-align: center;
+
+    transition:
+        border-color var(--duration-fast) ease,
+        transform var(--duration-fast) ease;
+}
+
+
+.architecture-node:hover {
+    border-color:
+        rgba(216, 255, 62, 0.3);
+
+    transform:
+        translateY(-2px);
+}
+
+
+.architecture-node strong {
+    display: block;
+
+    margin-top:
+        0.35rem;
+
+    color:
+        var(--color-text);
+
+    font-size:
+        0.95rem;
+}
+
+
+.architecture-label {
+    color:
+        var(--color-text-muted);
+
+    font-size:
+        0.65rem;
+
+    font-weight:
+        600;
+
+    letter-spacing:
+        0.12em;
+}
+
+
+.architecture-highlight {
+    border-color:
+        rgba(216, 255, 62, 0.25);
+
+    background:
+        rgba(216, 255, 62, 0.035);
+}
+
+
+.architecture-highlight .architecture-label {
+    color:
+        var(--color-accent);
+}
+
+
+.architecture-database {
+    border-color:
+        rgba(216, 255, 62, 0.18);
+}
+
+
+.architecture-arrow {
+    color:
+        var(--color-accent);
+
+    font-family:
+        monospace;
+
+    font-size:
+        1.2rem;
 }
 
 </style>
@@ -1062,6 +1336,114 @@
                         </p>
 
                     </section>
+                    <!-- =========================================================
+     PROJECT SHOWCASE
+     ========================================================= -->
+
+<section class="detail-section project-showcase">
+
+    <span class="detail-number">
+        01.5 — In Action
+    </span>
+
+    <h2>
+        The system in action.
+    </h2>
+
+    <p>
+        The application runs through a command-line interface,
+        with separate flows for administrators and users.
+    </p>
+
+
+    <div class="terminal-window">
+
+        <div class="terminal-header">
+
+            <div class="terminal-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <span class="terminal-title">
+                MovieBookingSystem
+            </span>
+
+        </div>
+
+
+        <div class="terminal-body">
+
+            <div>
+                <span class="terminal-muted">
+                    $ java Main
+                </span>
+            </div>
+
+            <br>
+
+            <div>
+                <span class="terminal-accent">
+                    Movie & Theatre Ticket Booking System
+                </span>
+            </div>
+
+            <br>
+
+            <div>
+                <span class="terminal-muted">
+                    ─────────────────────────────────
+                </span>
+            </div>
+
+            <br>
+
+            <div>
+                <span class="terminal-option">
+                    1.
+                </span>
+                Admin Login
+            </div>
+
+            <div>
+                <span class="terminal-option">
+                    2.
+                </span>
+                User Login
+            </div>
+
+            <div>
+                <span class="terminal-option">
+                    3.
+                </span>
+                Register
+            </div>
+
+            <div>
+                <span class="terminal-option">
+                    4.
+                </span>
+                Exit
+            </div>
+
+            <br>
+
+            <div>
+                <span class="terminal-muted">
+                    Select option:
+                </span>
+
+                <span class="terminal-cursor">
+                    _
+                </span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
 
 
@@ -1226,51 +1608,83 @@
                         </p>
 
 
-                        <div class="architecture">
+<div class="architecture">
 
-                            <span class="highlight">
-                                User / Admin
-                            </span>
+    <div class="architecture-node">
+        <span class="architecture-label">
+            USER / ADMIN
+        </span>
 
-                            <br>
-                            ↓
-                            <br>
+        <strong>
+            Application Interface
+        </strong>
+    </div>
 
-                            <span class="highlight">
-                                Main Application
-                            </span>
 
-                            <br>
-                            ↓
-                            <br>
+    <div class="architecture-arrow">
+        ↓
+    </div>
 
-                            Business / Application Logic
 
-                            <br>
-                            ↓
-                            <br>
+    <div class="architecture-node">
+        <span class="architecture-label">
+            JAVA
+        </span>
 
-                            <span class="highlight">
-                                DAO Layer
-                            </span>
+        <strong>
+            Main Application
+        </strong>
+    </div>
 
-                            <br>
-                            ↓
-                            <br>
 
-                            <span class="highlight">
-                                JDBC
-                            </span>
+    <div class="architecture-arrow">
+        ↓
+    </div>
 
-                            <br>
-                            ↓
-                            <br>
 
-                            <span class="highlight">
-                                MySQL Database
-                            </span>
+    <div class="architecture-node architecture-highlight">
+        <span class="architecture-label">
+            DAO
+        </span>
 
-                        </div>
+        <strong>
+            Data Access Layer
+        </strong>
+    </div>
+
+
+    <div class="architecture-arrow">
+        ↓
+    </div>
+
+
+    <div class="architecture-node">
+        <span class="architecture-label">
+            JDBC
+        </span>
+
+        <strong>
+            Database Connectivity
+        </strong>
+    </div>
+
+
+    <div class="architecture-arrow">
+        ↓
+    </div>
+
+
+    <div class="architecture-node architecture-database">
+        <span class="architecture-label">
+            MYSQL
+        </span>
+
+        <strong>
+            Persistent Database
+        </strong>
+    </div>
+
+</div>      
 
                     </section>
 
