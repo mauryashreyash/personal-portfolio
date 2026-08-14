@@ -4,7 +4,7 @@
 
 A modern, responsive personal portfolio website built to showcase my projects, technical skills, development journey, and experience as a Computer Science & Engineering student.
 
-🔗 **Live Portfolio:**  
+🔗 **Live Portfolio:**
 https://mauryashreyash.github.io/personal-portfolio/
 
 ---
@@ -17,27 +17,31 @@ It is designed to present my journey as a developer — from building web interf
 
 The website focuses on:
 
-- Clean and modern visual design
-- Strong project presentation
-- Responsive layouts
-- Clear technical storytelling
-- Interactive user experience
-- Developer-focused portfolio structure
+* Clean and modern visual design
+* Strong project presentation
+* Responsive layouts
+* Clear technical storytelling
+* Interactive user experience
+* Developer-focused portfolio structure
+* Real project evidence and technical case studies
 
 ---
 
 ## 🚀 Features
 
-- **Modern Dark UI** — Minimal dark interface with a distinctive lime accent.
-- **Responsive Design** — Optimized for desktop, tablet, and mobile devices.
-- **Interactive Hero Section** — Introductory section with clear navigation and calls-to-action.
-- **Project Showcase** — Structured presentation of projects with technology tags and project links.
-- **Featured Project** — Highlights my Java + MySQL Movie & Theatre Ticket Booking System.
-- **Project Case Study** — Dedicated project-detail experience for explaining architecture, features, database design, and engineering decisions.
-- **Smooth Navigation** — Section-based navigation with smooth scrolling.
-- **Micro-interactions** — Hover effects and subtle transitions throughout the interface.
-- **Responsive Navigation** — Desktop and mobile navigation experience.
-- **Resume & Contact Sections** — Easy access to professional information and social profiles.
+* **Modern Dark UI** — Minimal dark interface with a distinctive lime accent.
+* **Responsive Design** — Optimized for desktop, tablet, and mobile devices.
+* **Interactive Hero Section** — Clear introduction with navigation and calls-to-action.
+* **Project Showcase** — Projects presented with visual previews, descriptions, technology tags, and links.
+* **Featured Project** — Highlights the Movie & Theatre Ticket Booking System.
+* **Project Case Study** — Dedicated project-detail page explaining the system, architecture, features, database design, and engineering decisions.
+* **Architecture Visualization** — Visual representation of the application's Java, DAO, JDBC, and MySQL layers.
+* **Database Visualization** — Highlights the main database tables used by the Movie Booking System.
+* **Terminal Showcase** — Presents the CLI application's user/admin flow in a terminal-inspired interface.
+* **Smooth Navigation** — Section-based navigation with smooth scrolling.
+* **Micro-interactions** — Subtle hover effects and transitions throughout the interface.
+* **Responsive Navigation** — Desktop and mobile navigation experience.
+* **Resume & Contact Sections** — Easy access to professional information and social profiles.
 
 ---
 
@@ -45,26 +49,27 @@ The website focuses on:
 
 ### Frontend
 
-- HTML5
-- CSS3
-- JavaScript
-- Responsive Design
-- CSS Grid
-- Flexbox
+* HTML5
+* CSS3
+* Vanilla JavaScript
+* Responsive Design
+* CSS Grid
+* Flexbox
 
 ### Design & UI
 
-- CSS Custom Properties
-- Responsive Media Queries
-- CSS Transitions & Animations
-- Google Fonts
-- Font Awesome
+* CSS Custom Properties
+* Responsive Media Queries
+* CSS Transitions & Animations
+* Google Fonts
+* Font Awesome
+* Dark UI / Lime Accent Design System
 
 ### Development Tools
 
-- Git
-- GitHub
-- VS Code
+* Git
+* GitHub
+* VS Code
 
 ---
 
@@ -74,40 +79,45 @@ The website focuses on:
 
 A CLI-based Java application connected to MySQL using JDBC and DAO architecture.
 
+The project demonstrates database-driven application development using Java and relational database concepts.
+
 **Tech Stack:**
 
 `Java` `JDBC` `MySQL` `DAO`
 
-Features include:
+**Key Features:**
 
-- Admin management
-- Movie management
-- Theatre / hall management
-- Screen management
-- Show management
-- User registration and login
-- Ticket booking
-- Revenue tracking
+* Admin management
+* Movie management
+* Theatre / hall management
+* Screen management
+* Show management
+* User registration and login
+* Ticket booking
+* Revenue tracking
+* MySQL database integration
 
-🔗 [View Repository](https://github.com/mauryashreyash/Movie-Theatre-Ticket-Booking-System)
+🔗 **Repository:**
+https://github.com/mauryashreyash/Movie-Theatre-Ticket-Booking-System
 
 ---
 
 ### 🧠 Interactive Quiz App
 
-An interactive web-based quiz application focused on user interaction, question handling, and scoring.
+An interactive web-based quiz application focused on question handling, user interaction, scoring, and instant feedback.
 
 **Tech Stack:**
 
 `JavaScript` `HTML` `CSS`
 
-🔗 [View Repository](https://github.com/mauryashreyash/Quiz-app)
+🔗 **Repository:**
+https://github.com/mauryashreyash/Quiz-app
 
 ---
 
 ### 💼 Tech Job Board
 
-A responsive job-board interface designed for presenting and browsing technology-related job opportunities.
+A responsive job-board interface designed for browsing, searching, and filtering technology-related job listings.
 
 **Tech Stack:**
 
@@ -117,7 +127,7 @@ A responsive job-board interface designed for presenting and browsing technology
 
 ### 🌐 Business Landing Page
 
-A responsive landing page focused on visual hierarchy, layout, and clear calls-to-action.
+A responsive business landing page focused on visual hierarchy, clear calls-to-action, and responsive layouts.
 
 **Tech Stack:**
 
@@ -127,7 +137,7 @@ A responsive landing page focused on visual hierarchy, layout, and clear calls-t
 
 ### 🧮 Web Calculator
 
-A simple interactive calculator built to practice JavaScript logic and DOM interaction.
+A simple interactive calculator built to practice JavaScript logic, DOM interaction, and responsive interface design.
 
 **Tech Stack:**
 
@@ -141,25 +151,23 @@ I'm currently focused on strengthening my foundation for software engineering ro
 
 ### Core Focus
 
-- ☕ Java
-- 🧩 Data Structures & Algorithms
-- 🏗️ Object-Oriented Programming
-- 🗄️ SQL & MySQL
-- 🔌 JDBC
-- 🌐 Web Development
-- ⚡ JavaScript
-- 🔧 Git & GitHub
+* ☕ Java
+* 🧩 Data Structures & Algorithms
+* 🏗️ Object-Oriented Programming
+* 🗄️ SQL & MySQL
+* 🔌 JDBC
+* 🌐 Web Development
+* ⚡ JavaScript
+* 🔧 Git & GitHub
 
 ### Exploring
 
-- Spring Boot
-- REST APIs
-- Backend Development
-- Full-Stack Development
-
+* Spring Boot
+* REST APIs
+* Backend Development
+* Full-Stack Development
 
 ---
-
 
 ## 📈 Development Journey
 
@@ -181,3 +189,43 @@ Web Development
 Spring Boot & REST APIs
         ↓
 Software Engineering
+```
+
+---
+
+## 🧭 Engineering Direction
+
+My primary development direction is **Java-based software engineering**, with a growing focus on backend development and full-stack applications.
+
+I'm particularly interested in understanding how software works beyond the user interface — including:
+
+* Application architecture
+* Object-oriented design
+* Data structures and algorithms
+* Database design
+* API development
+* Backend systems
+* Software engineering fundamentals
+
+My goal is to continue turning what I learn into practical, working software.
+
+---
+
+## 🌐 Connect With Me
+
+**Portfolio:**
+https://mauryashreyash.github.io/personal-portfolio/
+
+**GitHub:**
+https://github.com/mauryashreyash
+
+**LinkedIn:**
+https://www.linkedin.com/in/mauryashreyash/
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+See the `LICENSE` file for more information.
